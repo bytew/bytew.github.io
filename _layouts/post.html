@@ -1,0 +1,27 @@
+---
+layout: default
+---
+ <!--//添加评论系统-->
+ <link rel="stylesheet" href="../../../../css/gitalk.css">
+ <script src="../../../../js/gitalk.min.js"></script>
+
+<article class="post">
+  <h1>{{ page.title }}</h1>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  <div class="date">
+    Written on {{ page.date | date: "%B %e, %Y" }}
+  </div>
+
+  {% include disqus.html %}
+  
+  <!--   gitalk       -->
+  {% if site.gitalk %}
+  <div class="comment">
+      {% include comments.html %}
+  </div>
+  {% endif %}
+</article>
