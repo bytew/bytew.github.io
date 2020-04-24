@@ -36,6 +36,17 @@ footer-links:
 # You can find your shortname on the Settings page of your Disqus account
 disqus:
 
+# Netease settings
+netease_comment: false
+
+gitalk:
+   enable: true
+   owner: bytew
+   repo: bytew.github.io
+   clientID: 6b54318175f749b31186
+   clientSecret: 517f5de83cb23a3ce0ba6fa163226875e8141af8
+   admin: bytew
+
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
 
@@ -73,14 +84,6 @@ kramdown:
 sass:
   style: :expanded # You might prefer to minify using :compressed
 
-
-gitalk:
-   enable: true
-   owner: bytew
-   repo: Js-Front
-   clientID: 6b54318175f749b31186
-   clientSecret: 517f5de83cb23a3ce0ba6fa163226875e8141af8
-   admin: bytew
 
 # Use the following plug-ins
 gems:
