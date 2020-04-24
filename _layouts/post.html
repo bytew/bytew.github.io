@@ -1,9 +1,7 @@
 ---
 layout: default
 ---
- <!--//添加评论系统-->
- <link rel="stylesheet" href="../../../../css/gitalk.css">
- <script src="../../../../js/gitalk.min.js"></script>
+
 
 <article class="post">
   <h1>{{ page.title }}</h1>
@@ -18,25 +16,5 @@ layout: default
 
   {% include disqus.html %}
 
-  {% if site.disqus_username %}
-  <!-- disqus 评论框 start -->
-  <div class="comment">
-      <div id="disqus_thread" class="disqus-thread"></div>
-  </div>
-  <!-- disqus 评论框 end -->
-  {% endif %}
-
-  {% if site.netease_comment %}
-  <!-- 网易云跟帖 评论框 start -->
-  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-  <!-- 网易云跟帖 评论框 end -->
-  {% endif %}
-  
-  <!--   gitalk       -->
-  {% if site.gitalk %}
-  <div class="comment">
-      {% include comments.html %}
-  </div>
-  {% endif %}
 
 </article>
