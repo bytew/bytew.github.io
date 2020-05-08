@@ -29,15 +29,29 @@
           <nav>
             <a href="{{ site.baseurl }}/">博客</a>
             <a href="{{ site.baseurl }}/about">关于</a>
+            <a href="{{ site.baseurl }}/tags">分类</a>
           </nav>
         </header>
       </div>
     </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
+    <div id="main" role="main" >
+    <div class="tags" >
+      <ul >
+        {% for tag in site.tags %}
+        <span><a href="#{{ tag[0] }}">{{ tag[0] }}</a> </span>
+        {% endfor %}
+      </ul>
     </div>
 
+      <div class="container">
+        {{ content }}
+        <div class="sider" ></div>
+        
+      </div>
+     
+ 
+    </div>
+ 
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
